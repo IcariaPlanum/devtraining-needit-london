@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Mass Creation and Email Generation">e1d20ae4dbc53300affd7fcfbf961929</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 08:36:10</sys_created_on>
+        <sys_id>a6bdd628db093300affd7fcfbf961916</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_instance_a6bdd628db093300affd7fcfbf961916</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:52:13</sys_updated_on>
+        <ui_id>b773fc94-323c-4f09-8223-46e622069209</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6bdd628db093300affd7fcfbf961916"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6bdd628db093300affd7fcfbf961916</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:07</sys_created_on>
+        <sys_id>1b5cae60db493300affd7fcfbf961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 09:40:07</sys_updated_on>
+        <value>&lt;p&gt;&lt;span style="background-color: #fcfcfc;"&gt;Dear &lt;/span&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;${u_destinatar_mail},&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;Funds amounting to ${u_valoare_factura} need to be recuperated from your side.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;Please reply to this email&lt;/span&gt;&lt;/p&gt;</value>
+        <variable display_value="">c71241160b100300d97d8bf637673a55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6bdd628db093300affd7fcfbf961916</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:24</sys_created_on>
+        <sys_id>1f6cee60db493300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:41:51</sys_updated_on>
+        <value/>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6bdd628db093300affd7fcfbf961916</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:24</sys_created_on>
+        <sys_id>5b6cee60db493300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:40:05</sys_updated_on>
+        <value>&lt;p&gt;&lt;span style="background-color: #fcfcfc;"&gt;Dear &lt;span class="data_parent_pill" style="display: inline;"&gt;&lt;span class="data_pill "&gt;Trigger➛NeedIt Record➛Destinatar mail&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;Funds amounting to &lt;span class="data_parent_pill" style="display: inline;"&gt;&lt;span class="data_pill "&gt;Trigger➛NeedIt Record➛Valoare factura de recuperat&lt;/span&gt;&lt;/span&gt; need to be recuperated from your side.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #ffffff; color: #303a46; white-space: pre-wrap;"&gt;Please reply to this email&lt;/span&gt;&lt;/p&gt;</value>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6bdd628db093300affd7fcfbf961916</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 08:36:10</sys_created_on>
+        <sys_id>62bdd628db093300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 09:40:07</sys_updated_on>
+        <value>Funds to be received from ${u_destinatar_mail}</value>
+        <variable display_value="">b21241160b100300d97d8bf637673a4a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6bdd628db093300affd7fcfbf961916"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:07</sys_created_on>
+        <sys_id>975cae60db493300affd7fcfbf961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 09:40:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:24</sys_created_on>
+        <sys_id>d76cee60db493300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:40:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:24</sys_created_on>
+        <sys_id>176cee60db493300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:41:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>Funds to be received from  {{Created or Updated_1.current.u_destinatar_mail}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 08:36:10</sys_created_on>
+        <sys_id>eebdd628db093300affd7fcfbf96191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 08:36:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 09:40:24</sys_created_on>
+        <sys_id>536cee60db493300affd7fcfbf96191d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:41:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>{{Created or Updated_1.current.u_destinatar_mail}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a6bdd628db093300affd7fcfbf961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 08:36:10</sys_created_on>
+        <sys_id>a6bdd628db093300affd7fcfbf96191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 08:36:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{Created_1.current.u_destinatar_mail}}</value>
+    </sys_element_mapping>
+</record_update>

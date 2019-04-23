@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>PDF_ZIP_for_Archive</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments>Name: -Button Name-&#13;
+Action name: -button_action_name- (Should be unique per button on form and gets called from the UI Action script)&#13;
+Client: True (MUST be checked)&#13;
+Form button/Form Context Menu/Form Link: (UI Action must be one of these 'Form' types)&#13;
+Onclick: -runClientCode();- (Points to the function in your script that should be run when the UI Action gets clicked)&#13;
+Script:&#13;
+&#13;
+//Client-side 'onclick' function&#13;
+function runClientCode(){&#13;
+   if(&lt;CONDITION_TO_VALIDATE&gt; == false){&#13;
+      return false;  //Abort submission&#13;
+   }&#13;
+   //Call the UI Action and skip the 'onclick' function&#13;
+   gsftSubmit(null, g_form.getFormElement(), '&lt;button_action_name&gt;'); //MUST call the 'Action name' set in this UI Action&#13;
+}&#13;
+&#13;
+//Code that runs without 'onclick'&#13;
+//Ensure call to server-side function with no browser errors&#13;
+if(typeof window == 'undefined')&#13;
+   runBusRuleCode();&#13;
+&#13;
+//Server-side function&#13;
+function runBusRuleCode(){&#13;
+   current.&lt;field_name&gt; = &lt;value&gt;;&#13;
+   current.update();&#13;
+   gs.addInfoMessage('You did it!');&#13;
+   action.setRedirectURL(current);&#13;
+}</comments>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>PDF and ZIP  for Archive</name>
+        <onclick>exportPDF()</onclick>
+        <order>300</order>
+        <script><![CDATA[//Client-side 'onclick' function
+function exportPDF() { 
+ var sysparm_table = g_form.getTableName(); 
+ var sysparm_sys_id = g_form.getUniqueValue().toString(); 
+ var a='https://dev24908.service-now.com/';
+ var url = a+sysparm_table + '.do?PDF&sys_id=' + sysparm_sys_id; 
+ g_navigation.openPopup(url);
+	//Call the UI Action and skip the 'onclick' function
+ gsftSubmit(null, g_form.getFormElement(), 'PDF_ZIP_for_Archive'); //MUST call the 'Action name' set in this UI Action
+} 
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined')
+	action.setRedirectURL('exportAttachmentsToZip.do?sysparm_sys_id=' + current.sys_id + '&sysparm_table=' + current.getTableName());]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-24 15:25:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68ab91cbdbd03300affd7fcfbf96198f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>PDF and ZIP  for Archive</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_action_68ab91cbdbd03300affd7fcfbf96198f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-24 18:56:11</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

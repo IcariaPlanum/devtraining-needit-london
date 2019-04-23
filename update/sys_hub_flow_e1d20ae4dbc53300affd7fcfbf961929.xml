@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>If specific field have values, email to be sent  out with standard content + several variables</description>
+        <internal_name>mass_creation_and_email_generation</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.u_destinatar_mail","label":"Trigger➛NeedIt Record➛Destinatar mail","reference":"","reference_display":"Destinatar mail","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit","column_name":"u_destinatar_mail"},{"name":"Created_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference"},{"name":"42dacae0-bbea-4b52-8ed3-99e0bde5224d.table_name","label":"3➛NeedIt Table","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"table_name","base_type":"table_name"},{"name":"42dacae0-bbea-4b52-8ed3-99e0bde5224d.record","label":"3➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference"},{"name":"db6c7657-923d-4b5c-9900-377515b9b48e.scheduled_end_date_time","label":"1➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"db6c7657-923d-4b5c-9900-377515b9b48e.total_duration","label":"1➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration"},{"name":"70ec430c-1561-414e-ac03-30e94fce8897.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"70ec430c-1561-414e-ac03-30e94fce8897.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"2839d918-57ff-4383-b267-03d16f10538f.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"2839d918-57ff-4383-b267-03d16f10538f.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"b773fc94-323c-4f09-8223-46e622069209.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current.u_destinatar_mail","label":"Trigger➛NeedIt Record➛Destinatar mail","reference":"","reference_display":"Destinatar mail","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit","column_name":"u_destinatar_mail"},{"name":"Created_1.current.sys_created_on","label":"Trigger➛NeedIt Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_58872_needit_needit","column_name":"sys_created_on"}]</label_cache>
+        <latest_snapshot>fc585becdb893300affd7fcfbf96192c</latest_snapshot>
+        <master_snapshot>a76cee60db493300affd7fcfbf961935</master_snapshot>
+        <name>Mass Creation and Email Generation</name>
+        <outputs/>
+        <remote_trigger_id>3b6cee60db493300affd7fcfbf9619a9</remote_trigger_id>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>true</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 06:38:41</sys_created_on>
+        <sys_id>e1d20ae4dbc53300affd7fcfbf961929</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Mass Creation and Email Generation</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_e1d20ae4dbc53300affd7fcfbf961929</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-04-23 12:52:13</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e1d20ae4dbc53300affd7fcfbf961929"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e1d20ae4dbc53300affd7fcfbf961929"/>
+</record_update>
